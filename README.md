@@ -14,7 +14,7 @@ Spilleren har ingen egne innstillinger — alt kommer fra `scenario.json`.
 | `scenario-data.js` | Autogenerert kopi av scenariet, så spilleren virker uten webserver |
 | `bygg-scenario-data.js` | Lager `scenario-data.js` fra `scenario.json` |
 
-Motorene gjenbrukes uforandret fra mappen over: `../simulator.js`, `../renderer.js`, `../style.css`.
+Motorene gjenbrukes uforandret og ligger i denne mappen: `simulator.js`, `renderer.js`, `style.css`.
 
 ## Lage et nytt scenario
 
@@ -36,8 +36,9 @@ Endrer du `scenario.json` uten å kjøre `bygg-scenario-data.js`, fortsetter spi
 
 ## Frittstående mappe
 
-Kopier `style.css`, `simulator.js` og `renderer.js` hit og bytt `../` mot `./` i de tre
-lenkene øverst i `index.html`. Da kan mappen deles ut som den er.
+Denne mappen er allerede frittstående: `style.css`, `simulator.js` og `renderer.js`
+ligger her, og lenkene i `index.html` peker lokalt. Mappen kan deles ut som den er,
+og `index.html` kan åpnes rett fra disk.
 
 ## Hva deltakeren får justere
 
